@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main>
+    <div class="container">
+        <div class="cotiza_celu">
+            <h1>Todos los Productos</h1>
+            <a href="{% url 'productos:create' %}" class="btn btn-info">Crear Producto</a>
+            <div class="<div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th scope="col"ID</th>
+                            <th scope="col">TIPO</th>
+                            <th scope="col">NOMBRE</th>
+                            <th scope="col">DESCRIPCION</th>
+                            <th scope="col">PRECIO</th>
+                            <th scope="col">IMAGEN</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    {% for producto in producto_list %}
+                    <tbody>
+                        <tr>
+                            <td scope="row">{{forloop.counter}}</td>
+                            <td>{{producto.tipo}}</td>
+                            <td>{{producto.nombre}}</td>
+                            <td>{{producto.descripcion}}</td>
+                            <td>{{producto.precio}}</td>
+                            <td><img src="{{ producto.imagen.url }}" alt="Sin Imagen" height="100"></td>
+                            <td>                                
+                                |
+                                <a href="{% url 'productos:update' producto.id %}" class="btn btn-success">Editar</a>
+                                |
+                                <a href="{% url 'productos:delete' producto.id %}" class="btn btn-danger">Borrar</a>
+                            </td>
+                        <tr>
+                    </tbody>
+                    {% endfor %}
+                </table>
+        </div>
+    </div>
+</main>
+
+
+
+
+{% endblock %}

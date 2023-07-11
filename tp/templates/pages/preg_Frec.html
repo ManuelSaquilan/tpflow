@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+ 
+    <main>
+        <section class="questions container"> 
+            <h1 class="titulo">Preguntas Frecuentes</h1>
+              <img src="{% static './media/img/pexels-tom-swinnen-1309766.jpg' %}" class="prop_img">
+            
+            
+            <section class="questions_container">
+              <article class="questions_padding">
+                 <div class="questions_answer">
+                     <h2 class="questions_title">¿Cúal es su política de devolución?
+                       <span class="questions_arrow">
+                         <img src="{% static './media/img/marcador (1).png' %}" class="questions_img">
+                     </h2>
+                     <p class="questions_show">La empresa permite devoluciones de productos dentro de los 14 días posteriores a la fecha de compra, siempre y cuando el producto esté en su estado original y sin abrir. Si el producto se ha utilizado, pero se encuentra en buenas condiciones, se puede devolver dentro de los 30 días posteriores a la fecha de compra.</p>
+                 </div>
+                </article> 
+                
+                
+                <article class="questions_padding">
+                 <div class="questions_answer">
+                     <h2 class="questions_title">¿Ofrecen garantía en sus productos?
+                       <span class="questions_arrow">
+                         <img src="{% static './media/img/marcador (1).png' %}" class="questions_img">
+                       </span>
+                     </h2>
+                     <p class="questions_show">Sí, ofrecemos garantías en nuestros productos para asegurar la satisfacción del cliente y protegerlos de posibles defectos de fabricación. Cada producto que vendemos viene con garantía específica que cubre la reparación o el reemplazo del producto si presenta algún problema dentro de un período de tiempo específico despúes de la compra.</p>
+                 </div>
+                </article>
+                
+                <article class="questions_padding">
+                 <div class="questions_answer">
+                     <h2 class="questions_title">¿Pueden ayudarme a elegir el mejor producto para mis necesidades?
+                       <span class="questions_arrow">
+                         <img src="{% static './media/img/marcador (1).png' %}" class="questions_img">
+                       </span>
+                     </h2>
+                    <p class="questions_show">¡Claro que sí! Como empresa, estamos aquí para ayudarle a encontrar el producto que mejor se adapte a sus necesidades. Para ello, es importante que nos proporcione información detallada sobre lo que está buscando y para qué lo necesita. Una vez tengamos esa información , podremos recomendarle los productos que mejor se adapten a sus necesidades y presupuesto. Además si tiene alguna pregunta adicional o necesita ayuda para entender mejor las características y especificaciones técnicas de los productos, nuestro equipo de atención al cliente estará encantado de ayudarle. ¡Gracias por elegirnos!</p>
+                 </div>
+                </article> 
+             </section>
+      </main>
+{% endblock %}

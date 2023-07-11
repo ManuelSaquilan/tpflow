@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="cotiza_celu">
+            <h1>Estas seguro de borrar este producto?</h1>
+                <h2>{{producto.tipo}}</h2>
+                <h2>{{producto.nombre}}</h2>
+                <h2>{{producto.descripcion}}</h2>
+                <h2>{{producto.precio}}</h2>
+                <img src="{{ producto.imagen.url }}" height="100">
+                <form method="post">
+                    {% csrf_token %}
+                    <div>{{form.as_p}}</div>
+                    <input type="submit" value="{{ titulo }}" />
+                </form>
+        <a href="{% url 'productos:all' %}">Cancelar</a>
+    </div>
+   </div>
+</main>
+
+
+{% endblock %}

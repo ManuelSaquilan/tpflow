@@ -1,0 +1,62 @@
+
+#map {  
+    width: 80%;
+    height: 500px; 
+}
+
+.encabezado{
+    text-align: center;
+    color: white;
+    background-color: #00c4f5;
+}
+
+
+.popupSucursal h3{    
+    
+    font: white; 
+}
+
+.contenedor_mapa{ 
+    display: flex;
+    /* max-width: 100%; */
+    width:100%;
+    height:auto;
+    margin: auto;
+    justify-content: center;
+    text-align: center; 
+}
+
+.contenedor_sucursales{
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor_item {
+  display: flex;
+  justify-content: space-between;  
+}
+      
+.form-group{
+  display:flex;
+  width:100%;
+  padding: 5px;
+}
+
+.form-group label{ 
+  padding: 5px;
+}
+
+.button{
+  background-color: #55acee;
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 8px 16px; 
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#listadoSucursales{
+  text-align: center;
+}
+

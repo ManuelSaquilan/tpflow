@@ -1,0 +1,454 @@
+/* 
+* { box-sizing: border-box; }
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    
+    width: 100%;
+    height: 80%;
+    
+    
+    
+}
+article .containerflex h1{
+
+    margin: 10px;
+}
+
+article .containerflex strong{
+
+    margin: 10px;
+}
+.containerflex{
+    display: flex;
+   
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    margin: 30px;
+    flex-wrap: wrap;
+}
+ h1{
+    text-align: center;
+ }
+.container .celusg img{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    font-size: 25px;
+}
+
+.container .celumoto img{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    font-size: 25px;
+}
+ */
+ * { box-sizing: border-box; }
+ body{
+     margin: 0;
+     padding: 0;
+     
+ }
+ 
+ .container{
+     
+     width: 100%;
+     height: 80%;
+     text-align: -webkit-center;
+     padding-top: 10px;
+     
+     
+ }
+ .containerflex{
+     
+     margin: 30px 30px 0 30px;
+     display: flex;
+     border-radius: 8px 8px 0 0 ;
+     box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+     align-items: center;
+     background-color: white;
+     width: 50%;
+ 
+ }
+ .container2{
+     border-top: 2px solid rgb(230, 230, 230);
+     margin: 0 30px 30px 30px;
+     display: block;
+     border-radius: 0 0 8px 8px;
+     box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+     align-items: center;
+     background-color: white;
+     width: 50%;
+ 
+ 
+ }
+ 
+ .container  .containerflex .descripcion_1{
+ 
+     border-left: 2px solid rgb(230, 230, 230);;
+ }
+ .container  .container2 .descripcion_1 > span > h1{
+ 
+     font-size: 30px;
+ }
+/* ----------------------------*/
+/*Estilos para los celulares sg*/
+/*
+
+ .container  .celusg .containerflex .descripcion_1 .iconosflex .precio{
+     border-top: 2px solid rgb(230, 230, 230);
+     border-bottom: 2px solid rgb(230, 230, 230);
+     font-size: 30px;
+ }
+ .container  .celusg .containerflex .descripcion_1 .envio{
+     
+     font-size: 20px;
+     text-align: center;
+ }
+ 
+ .container  .celusg .containerflex .descripcion_1 .iconosflex .precio-envio{
+ 
+     font-size: 20px;
+     color: #00a650;
+     text-align: center;
+ }
+ .container  .celusg .containerflex .imagenproducto{
+     overflow: visible;
+ }
+ .container  .celusg .containerflex .imagenproducto img{
+ 
+     width: 50%;
+     object-fit: cover;
+     transition: transform 0.3s ease-out;
+     
+ }
+ .container  .celusg .containerflex .imagenproducto img:hover{
+ 
+ 
+         transform: scale(1.2); 
+     }
+    
+     
+ 
+ .container  .celusg .containerflex .descripcion_1{
+     padding: 0 50px 0 50px;
+     display: flex;
+     flex-flow: column;
+     
+     
+ }
+ 
+ .container  .celusg .containerflex .descripcion_1 .iconosflex{
+    
+     display: flex;
+     flex-flow: row;
+     align-items: center;
+     
+ 
+ }
+ 
+ 
+ 
+ .container  .celusg .container2 .descripcion_1{
+     
+     text-align: left;
+     padding: 0 30px 30px 30px;
+     
+ }
+ .container  .celusg .container2 .descripcion_1 > span > h2{
+     
+     border-bottom: 1px solid rgb(230, 230, 230);
+     
+ }
+ 
+ 
+ 
+ 
+ 
+ .container  .celusg .containerflex .descripcion_1 span{
+    
+     margin: 5px;
+ }
+ 
+ .celusg .containerflex .descripcion_1 a{
+    background-color: #2bc1cc;
+    color: rgba(0,0,0,1);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+ 
+ }
+ /*fin para los estilo sg*/
+
+ /*estilo para los celulares moto*/
+
+ .container  .celumoto .containerflex .descripcion_1 .iconosflex .precio{
+    border-top: 2px solid rgb(230, 230, 230);
+    border-bottom: 2px solid rgb(230, 230, 230);
+    font-size: 30px;
+}
+.container  .celumoto .containerflex .descripcion_1 .envio{
+    
+    font-size: 20px;
+    text-align: center;
+}
+
+.container  .celumoto .containerflex .descripcion_1 .iconosflex .precio-envio{
+    text-align: center;
+    font-size: 20px;
+    color: #00a650;
+}
+.container  .celumoto .containerflex .imagenproducto{
+    overflow: hidden;
+}
+.container  .celumoto .containerflex .imagenproducto img{
+
+    width: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+    
+}
+.container  .celumoto .containerflex .imagenproducto img:hover{
+
+
+        transform: scale(1.2); 
+    }
+   
+    
+
+.container  .celumoto .containerflex .descripcion_1{
+    padding: 0 50px 0 50px;
+    display: flex;
+    flex-flow: column;
+    
+    
+}
+
+.container  .celumoto .containerflex .descripcion_1 .iconosflex{
+   
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    
+
+}
+
+
+
+.container  .celumoto .container2 .descripcion_1{
+    
+    text-align: left;
+    padding: 0 30px 30px 30px;
+    
+}
+.container  .celumoto .container2 .descripcion_1 > span > h2{
+    
+    border-bottom: 1px solid rgb(230, 230, 230);
+    
+}
+
+
+
+
+
+.container  .celumoto .containerflex .descripcion_1 span{
+   
+    margin: 5px;
+}
+.celumoto .containerflex .descripcion_1 a{
+    background-color: #2bc1cc;
+    color: rgba(0,0,0,1);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+ 
+ }
+
+/*fin de estilo celu moto*/
+
+
+
+
+
+
+.container #sgs22{
+    display:flex;
+  
+}
+.container #sga13{
+    display: flex; 
+}
+
+.container #sga33{
+    display: flex;  
+}
+
+.container #sga23{
+    display: flex;  
+}
+
+.container #sgs20{
+    display: flex;  
+}
+
+.container #me32{
+    display: flex;  
+}
+
+
+.container #me13{
+    display: flex;  
+}
+
+.container #mg9{
+    display: flex;  
+}
+
+.container #mg32{
+    display: flex;  
+}
+
+.container #mg42{
+    display: flex;  
+}
+.container #me22{
+    display: flex;  
+}
+
+
+/*Para todas las imagenes de los productos que no son celulares*/
+
+.container  .containerflex .descripcion_1 .precio{
+    border-top: 2px solid rgb(230, 230, 230);
+    border-bottom: 2px solid rgb(230, 230, 230);
+    font-size: 30px;
+}
+.container  .containerflex .descripcion_1 .iconosflex .envio{
+    text-align: center;
+    font-size: 20px;
+}
+
+.container   .containerflex .descripcion_1 .iconosflex .precio-envio{
+    text-align: center;
+    font-size: 20px;
+    color: #00a650;
+}
+.container   .containerflex .imagenproducto{
+    overflow: visible;
+}
+.container   .containerflex .imagenproducto img{
+
+    width: 70%;
+    object-fit: cover;
+    transition: transform 0.3s ease-out;
+    
+}
+.container   .containerflex .imagenproducto img:hover{
+
+
+        transform: scale(1.2); 
+    }
+   
+    
+
+.container .containerflex .descripcion_1{
+    padding: 0 50px 0 50px;
+    display: flex;
+    flex-flow: column;
+    
+    
+}
+
+.container .containerflex .descripcion_1 .iconosflex{
+   
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    
+
+}
+
+
+
+.container  .container2 .descripcion_1{
+    
+    text-align: left;
+    padding: 0 30px 30px 30px;
+    
+}
+.container  .container2 .descripcion_1 > span > h2{
+    
+    border-bottom: 1px solid rgb(230, 230, 230);
+    
+}
+
+
+
+
+
+.container  .containerflex .descripcion_1 span{
+   
+    margin: 5px;
+}
+.containerflex .descripcion_1 a{
+    background-color: #2bc1cc;
+    color: rgba(0,0,0,1);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    font-size: 18px;
+ 
+ }
+
+/* .container .containerflex img{
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.container .containerflex a{
+    background-color: #02a9f7;
+    color: rgba(0,0,0,1);
+    border-radius: 111px;
+    padding: 10px 15px;
+  
+  
+  } */
+
+ /*Estilo para la pagina de promociones*/
+
+ .mediosdepago iframe{
+    display: block;       
+    width: 100vw;
+    height: 100vh;
+    border: none;
+  
+}
+
+
+
+
+
+
+
+
+   
+
+
+
+
+  
+
+
+
+

@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+        <div class="container">
+        <article>
+            <div class = "containerflex">
+                <div class="imagenproducto">
+                <img src="{% static './media/img/monitor1.jpg' %}" alt="" srcset="aca foto de un monitor">
+            </div>  
+            <div class="descripcion_1">
+                <div class="iconosflex">
+                <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                <span class="envio">Envio con normalidad</span></div>
+                <span class="precio">$ 86.999</span>
+                <div class="iconosflex">
+                <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                <br>
+                <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                </div> </div>
+                <div class = "container2">
+                <div class="descripcion_1">
+            <span><h1>Descripcion</h1></span>
+                <span><h1>Monitor Gamer Samsung LF24T350FHLCZB 24”</h1></span>
+                <span> <h2>Conectá tus dispositivos</h2>
+                    Mediante su entrada PC In podrás conectar tu PC o Notebook. Además, también ofrece la posibilidad de conectarse a través de HDMI. El LED no tiene sistema de audio incorporado.
+                </span>
+                <span> <h2>Disfrutá Full HD</h2> 
+                    El monitor Samsung LF24T350FHLCZB de 24 pulgadas cuenta con resolución Full HD (1920 x 1080 píxeles) de formato widescreen 16:9 y un contraste 1000:1.
+               </span><br>
+                
+               </div> </div>
+    </article>
+    <article>
+            <div class = "containerflex">
+                <div class="imagenproducto">   
+                <img src="{% static './media/img/monitor2.png' %}" alt="" srcset="aca foto de un monitor"></div>
+                <div class="descripcion_1">
+                    <div class="iconosflex">
+                    <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                    <span class="envio">Envio con normalidad</span></div>
+                    <span class="precio">$ 289.999</span>
+                    <div class="iconosflex">
+                    <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                    <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                    <br>
+                    <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                    </div> </div>
+                    <div class = "container2">
+                    <div class="descripcion_1">
+                <span><h1>Descripcion</h1></span>
+                    <span><h1>Monitor Samsung 32” M7 LS32BM700ULXZB</h1></span>
+                    <span> <h2>Mirá, jugá y viví con estilo</h2>
+                        Todo lo que necesitás está justo en tu pantalla. Mirá, trabajá y chateá, todo sin conectar una PC separada, con Smart Monitor. Tus aplicaciones favoritas de contenido, productividad y videollamadas están integradas para una configuración de escritorio más simple y elegante.
+                    </span>
+                    <span> <h2>Tus programas favoritos en tu espacio</h2> 
+                        Entretenimiento sin esfuerzo con una simple conexión Wi-Fi. Disfrutá fácilmente de tus aplicaciones de transmisión favoritas en 4K HDR real, a menudo difícil de experimentar en un entorno de PC. Samsung TV Plus ofrece contenido en vivo gratuito sin descargas ni registros, y recomendaciones de contenido personalizadas de Universal Guide.
+                    </span>
+                    <span> <h2>Productividad sin PC</h2> 
+                        Experimentá sin PC. Navegá por la web, editá documentos y trabajá en proyectos, todo sin necesidad de una PC separada. Con el nuevo modo de trabajo, también podés acceder de forma remota a otra PC, usar los programas de Microsoft 365 e incluso conectarse a dispositivos móviles Samsung con Samsung DeX para trabajar sin problemas.
+                    </span>
+                    <br>
+
+                   </div> </div>   
+           
+            </article>
+
+
+    </div>
+
+    
+
+</body>
+</html>
+
+{% endblock %}

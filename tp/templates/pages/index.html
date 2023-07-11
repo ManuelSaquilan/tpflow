@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<div class="contenedor">
+        <main class="main">
+            <div class="slider">
+                <ul class="slides">
+                    <li class="slide">
+                        <img class="imgpc img1" src="{% static './media/img/slider1.jpg' %}" alt="">
+                         
+                    <li class="slide">
+                        <img class="imgpc img2" src="{% static './media/img/slider2.jpg' %}" alt="">
+                        
+                    </li>
+                    <li class="slide">
+                        <img class="imgpc img3" src="{% static './media/img/slider3.jpg' %}" alt="">
+                        
+                    </li>
+                    <li class="slide">
+                        <img class="imgpc img4" src="{% static './media/img/slider4.jpg' %}" alt="">
+                        
+                </ul>
+            </div>
+            <div class="ofertas">
+                <h1> NUESTRAS MEJORES OFERTAS </h1>
+            </div>
+            <section>
+                <div class="promo">
+                    <div class="formasdepago">
+                        <br>
+                        <div class="separador"></div>
+                        <img src="{% static './media/img/tarjetas-300x46.png' %}" height="44px" alt="">
+                        <div class="centradopromo">
+                            <a href="{% url 'promociones' %}">Promociones aqui!</a>
+                            <p> Formas de pago geniales</p>
+                        </div>
+                        <div class="separador"></div>
+                        <br>
+                        <img src="{% static './media/img/camion.jpg' %}" width="44px" height="44px" alt="">
+                        <div class="centradopromo2">
+                            <p>Envios a todo el pais! </p>
+                            <a href="{% url 'sucursales' %}"> Retiro en nuestras sucursales!</a>
+                        </div>
+                        <br>
+                        <div class="separador"></div>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="contenedortira">
+                    <div class="imagenesproducto">
+                        <div class="imagenesalinear">
+                            <img class="img1 mascara" src="{% static './media/img/notebook.jpg' %}" alt="">
+                            <div class="imagenenlace">
+                                <a href="{% url 'notebooks' %}"> Notebooks</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagenesproducto">
+                        <div class="imagenesalinear">
+                            <img class="img2 mascara" src="{% static './media/img/monitor.jpg' %}" alt="">
+                            <div class="imagenenlace">
+                                <a href="{% url 'monitores' %}"> Monitores</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagenesproducto">
+                        <div class="imagenesalinear">
+                            <img class="img2 mascara" src="{% static './media/img/motoe32-1.jpg' %}" alt="">
+                            <div class="imagenenlace">
+                                <a href="{% url 'productoscelumoto' %}"> Celulares Moto</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagenesproducto">
+                        <div class="imagenesalinear">
+                            <img class="img2 mascara" src="{% static './media/img/impresora.jpg' %}" alt="">
+                            <div class="imagenenlace">
+                                <a href="{% url 'impresoras'%}"> Impresoras</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagenesproducto">
+                        <div class="imagenesalinear">
+                            <img class="img2 mascara" src="{% static './media/img/CELULAR-SAMSUNG-GALAXY-S22-128GB-BLANCO.jpg' %}" alt="">
+                            <div class="imagenenlace">
+                                <a href="{% url 'productoscelusamsung' %}"> Celulares Samsung</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="imagenesproducto">
+                        <div class="imagenesalinear">
+                            <img class="img2 mascara" src="{% static './media/img/tablet.jpg' %}" alt="">
+                            <div class="imagenenlace">
+                                <a href="{% url 'tablets' %}"> Tablets</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+       <section>
+        <div class="contenedorwrapper">   
+        <div class="slider-wrapper"></div>
+        <div class="buttons right">&#10095;</div>
+        <div class="buttons left">&#10094;</div> 
+        </div>
+        </section>
+        </main>
+        
+    </div>
+      
+    <script src="{% static './js/script.js' %}"></script>
+    <script src="{% static './js/slider.js' %}"></script>
+    
+{% endblock %}

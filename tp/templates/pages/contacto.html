@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <br>
+    <h1 class="titulo">Contacto</h1>
+    <div class="container_contacto">
+        <form action="https://formsubmit.co/ebcffc9a6331648fe9e11f231b37b9a5" method="POST" class="col mt-3 g-3 needs-validation" novalidate>
+            <div class="col-md-4 mx-auto">
+                <label for="nombre" class="form-label fs-4">Nombre</label>
+                <input type="text" class="form-control" name="name" required>
+                <div class="valid-feedback">
+                    Correcto
+                </div>
+                <div class="invalid-feedback">
+                    Es necesario poner el nombre
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto">
+                <label for="email" class="form-label fs-4">Email</label>
+                <input type="text" class="form-control" name="email" required>
+                <div class="valid-feedback">
+                    Correcto
+                </div>
+                <div class="invalid-feedback">
+                    Es necesario poner el correo electrónico
+                </div>
+            </div>
+
+            <div class="col-md-4 mx-auto">
+                <label for="subjet" class="form-label fs-4">Asunto</label>
+                <input type="text" class="form-control" name="subjet" required>
+                <div class="valid-feedback">
+                    Correcto
+                </div>
+                <div class="invalid-feedback">
+                    Es necesario poner asunto del correo
+                </div>
+            </div>
+
+            <div class="col-md-6 mx-auto">
+                <label for="comments" class="form-label fs-4">Mensaje</label>
+                <textarea name="comments" class="form-control" cols="15" rows="5" required></textarea>
+                <div class="valid-feedback">
+                    Correcto
+                </div>
+                <div class="invalid-feedback">
+                    Es necesario poner mensaje que desea enviar
+                </div>
+            </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end gap-3">
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+            </div>
+
+            <script src="{% static './js/contacto.js' %}"></script>
+
+            <input type="hidden" name="_next" value="http://127.0.0.1:5502/contacto.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+    </div>
+    
+    
+</body>
+
+</html>
+
+{% endblock %}

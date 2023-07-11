@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+        <div class="container">
+            <article>
+            <div class = "containerflex">
+                <div class="imagenproducto">   
+                <img src="{% static './media/img/impresora1.jpg' %}" alt="" srcset="aca foto de una imrpresora"></div>
+                    <div class="descripcion_1">
+                        <div class="iconosflex">
+                        <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                        <span class="envio">Envio con normalidad</span></div>
+                        <span class="precio">$ 179.999</span>
+                        <div class="iconosflex">
+                        <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                        <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                        <br>
+                        <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                        </div> </div>
+                        <div class = "container2">
+                        <div class="descripcion_1">
+                    <span><h1>Descripcion</h1></span>
+                        <span><h1>Impresora Epson Ecotank L3210</h1></span>
+                        <span> <h2>EcoTank: Economía y tranquilidad</h2>
+                            Gracias a la tecnología de impresión EcoTank, la impresora funciona 100% sin cartuchos: con su Sistema EcoFit, se utilizan tintas para llenar los tanques fácilmente y sin errores. Así lograrás reducir en gran medida los costos de impresión.
+                        </span>
+                        <span> <h2>Lo mejor</h2> 
+                            La impresora Epson Ecotank es compacta y ligera, diseñada para ocupar poco espacio. Con ella podrás imprimir, copiar y escanear con gran calidad cualquier documento. Además, cuenta con impresión de fotos optimizada, que mejora los tonos negros para dar excelentes texturas, sombras y contrastes en alta resolución (5.760 dpi x 1440 dpi). Su velocidad de impresión en negro es hasta 33 ppm, mientras que en color es de hasta 15 ppm. Por último, cuenta con soporte para varios tipos de papel (estándar, foto, sobres) y bandeja de alta capacidad.
+                       </span><br>
+                        
+                       </div> </div>
+            </article>
+            <article>
+            <div class = "containerflex">
+                <div class="imagenproducto">     
+                <img src="{% static './media/img/impresora2.jpg' %}" alt="" srcset="aca foto de una imrpresora"></div>
+                
+                <div class="descripcion_1">
+                <div class="iconosflex">
+                <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                <span class="envio">Envio con normalidad</span></div>
+                <span class="precio">$39.999</span>
+                <div class="iconosflex">
+                 <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                 <br>
+                <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                 </div> </div>
+                <div class = "container2">
+                <div class="descripcion_1">
+                    <span><h1>Descripcion</h1></span>
+                        <span><h1>Impresora Multifunción HP DeskJet Ink Advantage 2375</h1></span>
+                        <span> <h2>Funcionalidad</h2>
+                            Con la impresora multifunción Deskjet Ink Advantage 2375 vas a poder imprimir, escanear y copiar documentos y fotos en forma rápida, con colores vibrantes y textos nítidos. Además vas a poder ahorrar espacio, gracias a su diseño ultra compacto que encaja prácticamente en cualquier espacio.
+                        </span>
+                        <span> <h2>Calidad de impresión</h2> 
+                            Como tecnología de impresión utiliza inyección térmica de tinta HP. Tiene una resolución máxima de hasta 4800 x 1200 dpi en color, y de 1200 x 1200 en negro. A su vez, la velocidad de impresión en negro es hasta 7,5 ppm y en color hasta 5,5 ppm.
+                       </span>
+                       <span> <h2>Conectividad</h2> 
+                        La impresora multifunción Deskjet Ink Advantage 2375 cuenta con conectividad cableada mediante puerto USB (cable USB no incluido).
+                   </span>
+                   <br>
+                </div> </div>
+            </article>
+
+
+    </div>
+
+    
+
+
+
+</body>
+</html>
+
+{% endblock %}

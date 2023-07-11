@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+        <div class="container">
+        
+                <article>
+                  
+                    <div class = "containerflex">
+                        <div class="imagenproducto"> 
+                    <img src="{% static './media/img/notebook2.jpg' %}" alt="" srcset="aca foto de Tablet">
+                    </div>
+                    <div class="descripcion_1">
+                        <div class="iconosflex">
+                        <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                        <span class="envio">Envio con normalidad</span></div>
+                        <span class="precio">$ 193.999</span>
+                        <div class="iconosflex">
+                        <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                        <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                        <br>
+                        <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                        </div> </div>
+                        <div class = "container2">
+                        <div class="descripcion_1">
+                    <span><h1>Descripcion</h1></span>
+                        <span><h1>Galaxy Tab S6 Lite + Book Cover Gray</h1></span>
+                        <span> <h2>Cambiá el estilo de tu tablet</h2>
+                            La Galaxy Tab S6 Lite va a ser tu gran compañía portátil para tomar notas. Con una gran pantalla de 10.4'' dentro de tamaño delgado y ligero, One UI 2 en Android y S Pen, está lista para acompañarte. Estés jugando, aprendiendo o dibujando, esta tablet está hecha para unirse a tu momento.
+                        </span>
+                        <span> <h2>Ligera y delgada, de encaje perfecto</h2> 
+                            Galaxy Tab S6 Lite es delgada y liviana gracias a su material metálico sin costuras. Se desliza fácilmente en un bolso pequeño para una portabilidad simple y un estilo minimalista. Conseguila en Oxford Gray, Oxford Pink y Oxford Blue.
+                        <span> <h2>Dibujá con S Pen</h2> 
+                            S Pen es un conjunto de herramientas de escritura en uno. Con agarre natural, baja latencia y una sensibilidad a la presión impresionante, lo hace ideal para todo, desde dibujar hasta editar documentos. Además, gracias al soporte magnético de la tablet, el S Pen no se extraviará.
+                        </span>
+                        <br>
+                      </div> </div>
+                    
+                </article>
+
+                <article>
+                    
+                    <div class = "containerflex">
+                        <div class="imagenproducto"> 
+                    <img src="{% static './media/img/tablet1.jpg' %}" alt="" srcset="aca foto de Tablet"></div>
+                    <div class="descripcion_1">
+                        <div class="iconosflex">
+                        <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                        <span class="envio">Envio con normalidad</span></div>
+                        <span class="precio">$ 134.999</span>
+                        <div class="iconosflex">
+                        <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                        <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                        <br>
+                        <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                        </div> </div>
+                        <div class = "container2">
+                        <div class="descripcion_1">
+                    <span><h1>Descripcion</h1></span>
+                        <span><h1>Samsung Galaxy S22</h1></span>
+                        <span> <h2>Sumergite en sonidos dinámicos</h2>
+                            Mejorá tu experiencia de entretenimiento con los parlantes cuádruples de sonido envolvente Dolby Atmos®, que revelan cada detalle con una claridad y profundidad excepcionales. Diseñada para ofrecer una inmersión en movimiento, la Galaxy Tab A8 abre un universo envolvente de contenido, juegos y actividades que los jóvenes adoran.
+                        </span>
+                        <span> <h2>Dejá que el poder superior se haga cargo</h2> 
+                            Con el procesador Octa-core combinado con hasta 4 GB de RAM y 128 GB de almacenamiento interno, Galaxy Tab A8 siempre está lista para enfrentar un desafío sin agotar la velocidad o la batería. Ahorrá más con una tarjeta microSD de hasta 1 TB y mantenete respaldado con una batería de 7040 mAh (típica) y una carga rápida de 15 W.
+                        <span> <h2>Clásico. Contemporáneo.</h2> 
+                            Conserva un diseño estético y vibrante, capaz de atraer todas las miradas. Su elegante cuerpo metálico ofrece tan solo 6,9 mm visto de perfil. Y su color fue pensado para resultar naturalmente encantador.
+                        <br>
+                      </div> </div>    
+        
+
+        </div>
+  
+</body>
+</html>
+{% endblock %}

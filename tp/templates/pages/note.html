@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+          
+        <div class="container">
+                <article>
+                  <div class = "containerflex">
+                 
+                    <div class="imagenproducto">  
+                    <img src="{% static './media/img/notebook1.jpg' %}" alt="" >
+                    </div>
+                    <div class="descripcion_1">
+                    <div class="iconosflex">
+                    <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                    <span class="envio">Envio con normalidad</span></div>
+                    <span class="precio">$ 389.999</span>
+                    <div class="iconosflex">
+                    <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                    <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                    <br>
+                    <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                    </div> </div>
+                    <div class = "container2">
+                    <div class="descripcion_1">
+                <span><h1>Descripcion</h1></span>
+                    <span><h1>Notebook Asus LS 510</h1></span>
+                    <span> <h2>Procesador Intel Celeron</h2>
+                      Ofrece un rendimiento sólido para tareas cotidianas y multitarea básica, con una velocidad de reloj de hasta 2,8 GHz
+                    </span>
+                    <span> <h2>La L510 cuenta con 4GB de RAM DDR4 y un almacenamiento de 128GB en estado sólido</h2> 
+                      Lo que te permite un acceso rápido a los datos y una respuesta rápida del sistema.
+                    </span>
+                    <span> <h2>Cuenta con un diseño delgado y elegante</h2> 
+                      Con un peso de solo 1,6 kg, lo que la hace más fácil de transportar a donde sea que vayas.
+                    </span>
+                    <br>
+
+                   </div> </div> 
+                
+                </article>
+           
+              <article>
+                <div class = "containerflex">
+                
+                  <div class="imagenproducto">  
+                  <img src="{% static './media/img/Aspire.jpg' %}" alt=""></div>
+                  <div class="descripcion_1">
+                    <div class="iconosflex">
+                    <span><i class="fa-solid fa-truck-fast fa-flip-horizontal fa-xl" style="color: #00a650;"></i></span>
+                    <span class="envio">Envio con normalidad</span></div>
+                    <span class="precio">$ 489.999</span>
+                    <div class="iconosflex">
+                    <span><i class="fa-solid fa-rotate-right fa-xl" style="color: #00a650;"></i></span>
+                    <span class="precio-envio">Devolucion gratis en la primera compra</span></div>
+                    <br>
+                    <span><a href="{% url 'gracias' %}">Compra aqui!</a></span>
+                    </div> </div>
+                    <div class = "container2">
+                    <div class="descripcion_1">
+                <span><h1>Descripcion</h1></span>
+                    <span><h1>Notebook Acer Aspire 3 Celeron</h1></span>
+                    <span> <h2>Procesador Intel Celeron N4000</h2>
+                      Ofrece un rendimiento sólido para tareas diarias como navegación por internet, procesamiento de textos y correo electrónico.
+                    </span>
+                    <span> <h2>Cuenta con 8GB de RAM tipo: DDR4 y una capacidad del disco rígido de 500GB</h2> 
+                      Lo que te permite un acceso rápido a los datos y una respuesta rápida del sistema.
+                    </span>
+                    <span> <h2>La batería de larga duración proporciona hasta 12 horas de autonomía.</h2> 
+                      Lo que significa que puedes trabajar sin interrupción durante todo el día.
+                    </span>
+                    <br>
+                  </div> </div> 
+           
+              </article>
+         </div>
+          
+
+
+</body>
+</html>
+
+{% endblock %}

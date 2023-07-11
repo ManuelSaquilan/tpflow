@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+
+  <main>
+    <h1 class="titulo">Sucursales</h1>
+    <div class=contenedor_sucursales>
+      <div class="contenedor_item">
+        <div class="form-group">
+          <label for="provincia">Provincia:</label>
+          <select id="provincia"></select>
+        </div>
+        <div class="form-group">
+          <label for="localidad">Localidad:</label>
+          <select id="localidad"></select>
+        </div>
+        <button type="button" class="button" onclick="buscarSucursales()">Buscar</button>
+      </div>
+    </div>
+
+    <br>
+    <div class="contenedor_mapa">
+      <div id="map"></div>
+    </div>
+
+    <br>
+    <div id="listadoSucursales">
+      <a target="_blank"  class="button" href="{% url 'listadosucursales' %}">Ver listado</a>
+    </div>
+
+    <br>
+    <br>
+
+  </main>
+
+  
+  
+  <!-- fontawesome -->
+  <script src="{% static './js/all.min.js' %}"></script>
+  <!-- mapa -->
+  <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+  
+  <script src="{% static './js/sucursales.js' %}"></script>
+ 
+  
+</body>
+
+</html>
+
+{% endblock %}
